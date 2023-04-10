@@ -3,7 +3,7 @@
   "short_name": "Trámite Documentario",
   "description": "Sistema de Trámite Documentario (Plan Binacional Perú-Ecuador)",
   "background_color": "#ffffff",
-  "theme_color": "#6F303A",
+  "theme_color": "#6b2e38",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./?utm_source=web_app_manifest",
