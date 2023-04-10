@@ -11,14 +11,19 @@
   "lang": "es-PE",
   "icons": [
     {
-      "src": "logos/gato-w.png",
+      "src": "logos/icono-256.png",
       "sizes": "256x256",
-      "type": "image/png" 
+      "type": "image/png"
     },
     {
-      "src": "logos/gato-a.png",
+      "src": "logos/icono-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "logos/icono-64.png",
       "sizes": "64x64",
-      "type": "image/png" 
+      "type": "image/png"
     }
   ]
 }
