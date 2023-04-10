@@ -1,0 +1,24 @@
+{
+  "name": "PlanBinacional",
+  "short_name": "PB",
+  "description": "Esta es una prueba, del PWA del Plan",
+  "background_color": "#4d0000",
+  "theme_color": "#800000",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "scope": "./",
+  "lang": "es-PE",
+  "icons": [
+    {
+      "src": "logos/gato-w.png",
+      "sizes": "256x256",
+      "type": "image/png" 
+    },
+    {
+      "src": "logos/gato-a.png",
+      "sizes": "64x64",
+      "type": "image/png" 
+    }
+  ]
+}
