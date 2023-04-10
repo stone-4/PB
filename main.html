@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sistema de Trámite Documentario</title>
+	<link rel="shortcut icon" type="image/x-icon" href="logos/favicon.ico">
+	<!-- <script src="resources/librerias/bootstrap.min.js"></script>	
+	<link rel="stylesheet" href="resources/librerias/bootstrap.min.css"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+	<header id="header">
+		<div id="header-fecha-title">
+			
+					<span>Seleccione año</span>
+					<select name='anio' id='selector-fecha'>
+
+						<option value='2023'>2023</option>
+						<option value='2022'>2022</option>
+					</select>
+		</div>
+		<div id="header-actions">
+			<!-- <a id="header-actions-edit" href="#">	
+				<i class="fa-solid fa-pen-to-square"></i>
+				<span>Editar perfil</span>
+			</a> -->
+			<a id="header-actions-logout" href="/sistema/logout">
+				<i class="fa-solid fa-right-from-bracket"></i>	
+				<span>Cerrar sesión</span>
+			</a>	
+		</div>
+	</header>
+	<nav>
+		<div id="content-sidebar">
+			<div id="logo">
+				<img src="logos/PB-logo-alt.png" alt="logo-sidebar" />				
+			</div>
+			<div id="content-user">			
+				<div id="user">
+					<i class="fa-solid fa-circle-user fa-6x"></i>
+				</div>
+				<div id="user-info">
+					<span>Bienvenido(a)</span>
+					<span>Administrador</span>
+				</div>
+			</div>
+			<!-- <hr style="width: 100%" /> -->
+			<div id="sidebar-menu">
+				<ul>
+					<li id="sidebar-dropdown">
+						<a href="javascript:void(0)" id="sidebar-dropdown-title">
+			            	<i class="fa-solid fa-chart-simple"></i>
+			            	<span>Dashboard</span>
+			            	<i class="fa-solid fa-caret-right"></i>
+			            </a>
+					</li>
+					<li id="sidebar-dropdown">
+						<a href="javascript:void(0)" id="sidebar-dropdown-title">
+			            	<i class="fa-solid fa-folder"></i>
+			            	<span>Documentos de Ingreso</span>
+			            	<i class="fa-solid fa-caret-right"></i>
+			            </a>
+			            <!-- <ul id="sidebar-submenu">
+			                <li>
+				                <a href="?section=cartas-ingreso">
+				                	<i class="fa-solid fa-file-lines"></i>
+				                	<span>Cartas de Ingreso</span>
+				                </a>
+			                </li>
+			                <li>
+				                <a href="#">
+				                	<i class="fa-solid fa-file-lines"></i>
+				                	<span>Oficios de Ingreso</span>
+				                </a>
+			                </li>               
+			            </ul> -->
+					</li>
+					<li id="sidebar-dropdown">
+						<a href="javascript:void(0)" id="sidebar-dropdown-title">
+			            	<i class="fa-solid fa-folder"></i>
+			            	<span>Documentos de Salida</span>
+			            	<i class="fa-solid fa-caret-right"></i>
+			            </a>
+			            <!-- <ul id="sidebar-submenu">
+			                <li>
+				                <a href="#">
+				                	<i class="fa-solid fa-file-lines"></i>
+				                	<span>Cartas de Salida</span>
+				                </a>
+			                </li>
+			                <li>
+				                <a href="#">
+				                	<i class="fa-solid fa-file-lines"></i>
+				                	<span>Oficios de Salida</span>
+				                </a>
+			                </li>            
+			            </ul> -->
+					</li>
+					<!-- <?php
+						//if($_SESSION["privilegio"] == "admin" OR $_SESSION["privilegio"] == "superuser"):
+					?>	
+							<li id='sidebar-dropdown-on' style='margin-top: 10px;'>
+								<a href='javascript:void(0)' id='sidebar-dropdown-title' style='padding: 10px 6px; border-radius: 15px'>
+					            	<i class='fa-solid fa-folder' style='padding: 0 4px'></i>
+					            	<span style='padding: 0 5px'>Documentos Internos</span>
+					            	<i style='padding: 0 10px' class='fa-solid fa-caret-right'></i>
+					            </a>
+					            <ul id='sidebar-submenu'>
+					                <li>
+						                <a href='?section=direccion-ejecutiva'>
+						                	<i class='fa-solid fa-file-lines'></i>
+						                	<span>Dirección Ejecutiva</span>
+						                </a>
+					                </li>
+					                <li>
+						                <a href='?section=infraestructura'>
+						                	<i class='fa-solid fa-file-lines'></i>
+						                	<span>Infraestructura</span>
+						                </a>
+					                </li>
+					                <li>
+						                <a href='?section=desarrollo-economico'>
+						                	<i class='fa-solid fa-file-lines'></i>
+						                	<span>Desarrollo Económico</span>
+						                </a>
+					                </li>
+					                <li>
+						                <a href='?section=imagen-comunicaciones'>
+						                	<i class='fa-solid fa-file-lines'></i>
+						                	<span>Imagen y Comunicaciones</span>
+						                </a>
+					                </li>
+					                <li>
+						                <a href='?section=planificacion-monitoreo'>
+						                	<i class='fa-solid fa-file-lines'></i>
+						                	<span>Planificación y Monitoreo</span>
+						                </a>
+					                </li>         
+					            </ul>
+							</li>
+					<?php
+						//endif;
+					?> -->
+				</ul>			
+			</div>
+			<div id="down-button">
+				<i class="fa-solid fa-angles-down"></i>
+				<i class="fa-solid fa-angles-up"></i>
+			</div>		
+		</div>
+	</nav>
+	<main style= 'background: white; box-shadow: 0 0 10px -5px grey'>
+		<div id="button-actions">
+	<button type="button" id="add">
+		<i class="fa-solid fa-plus"></i>
+	  	<span>Agregar Nuevo</span>	  	 	
+	</button>
+</div>
+
+<div id="datatable_contenedor">
+    <div id="date_range_filter_wrapper">
+		  <h4>Buscar por Fecha de Documento</h4>
+		  <div id="date_range_filter_content">
+		  	<div>
+		      <span>Desde: </span>
+		      <input type="text" id="min" name="min" class="doc_ingreso_min" placeholder="Seleccionar fecha" readonly>
+		    </div>
+		    <div>
+		      <span>Hasta: </span>
+		      <input type="text" id="max" name="max" class="doc_ingreso_max" placeholder="Seleccionar fecha" readonly>
+		    </div>
+		    <div>
+		      	<button id="filtrar_fecha" class="filtrar_fecha_doc_ingreso">Filtrar</button>
+          		<button id="reset_filtrar_fecha" class="reset_filtrar_fecha_doc_ingreso">Reiniciar</button>
+		    </div>
+		  </div>
+		</div>
+    <table id="datatable" class="datatable_doc_ingreso hover">
+        <thead id="thead">            
+            <th class="dt-head-center">Tipo Documento</th>
+            <th class="dt-head-center">Nro. Documento</th>            
+            <th class="dt-head-center">Remitente</th>
+            <th class="dt-head-center">Remitente (Inst. / Dep. / Org.)</th>
+            <th class="dt-head-center">Asunto</th>
+            <th class="dt-head-center">Fecha Documento</th>            
+            <th class="dt-head-center">Destinatario (Área / Unidad / Otros)</th>
+            <th class="dt-head-center">Fecha Ingreso (Recepción)</th>
+            <th class="dt-head-center">Documento</th>
+            <th></th>                 
+        </thead>
+        <tr>
+	      	<td>Lorem, ipsum dolor sit amet consectetur</td>
+	      	<td>Lorem, ipsum dolor sit amet consectetur</td>  
+	      	<td>Lorem, ipsum dolor sit amet consectetur</td>
+	      	<td>Lorem, ipsum dolor sit amet consectetur</td>
+	      	<td>Lorem, ipsum dolor sit amet consectetur</td>
+	      	<td>Lorem, ipsum dolor sit amet consectetur</td>
+	      	<td>Lorem, ipsum dolor sit amet consectetur</td>
+	      	<td>Lorem, ipsum dolor sit amet consectetur</td>
+	      	<td>Lorem, ipsum dolor sit amet consectetur</td>
+      	</tr>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <th></th>
+        </tfoot>
+    </table>
+</div>
+	</main>
+</body>
+</html>	
